@@ -1,2 +1,4 @@
 2022-09-21 11:55:34,134 - __main__ - INFO - Token value: Token not available!
 2022-09-21 11:55:36,225 - __main__ - INFO - Weather in Berlin: 10.97
+2022-09-21 10:28:49,614 - __main__ - INFO - Token value: 1234
+2022-09-21 10:28:50,261 - __main__ - INFO - Weather in Berlin: 15.69
