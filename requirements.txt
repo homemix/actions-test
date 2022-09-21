@@ -1,0 +1,11 @@
+pip
+toml
+wheel
+cryptography
+lxml
+Pillow
+Jinja2
+keyring
+setuptools
+future
+requests
