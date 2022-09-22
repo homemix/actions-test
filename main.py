@@ -1,6 +1,7 @@
 import logging
 import logging.handlers
 import os
+from plyer import notification
 
 import requests
 
@@ -23,8 +24,21 @@ except KeyError:
     # logger.info("Token not available!")
     # raise
 
+def notify():
+    notification.notify(
+        title="Status",
+        message="Token not available!",
+        app_name="Status",
+        app_icon="icon.ico",
+        timeout=10,
+    )
+
+
+
+
 if __name__ == "__main__":
     logger.info(f"Token value: {SOME_SECRET}")
+    notify()
 
     r = requests.get('https://weather.talkpython.fm/api/weather/?city=Berlin&country=DE')
     if r.status_code == 200:
